@@ -5,11 +5,11 @@ def tea_please():
     if tea == "1":
         mint = int(input("How many pounds of Mint Tea would you like? "))
         amount = mint * 3.00
-        print(f'Your total is ${amount}')
+        print(f'Your total for {mint} pounds of mint is ${amount}')
     elif tea == "2":
         ginger = int(input("How many pounds of Ginger tea would you like? "))
         amount = ginger * 3.50
-        print(f'Your total is ${amount}')
+        print(f'Your total for {ginger} pounds of ginger is ${amount}')
 
 
 tea_please()
