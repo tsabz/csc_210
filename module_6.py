@@ -1,12 +1,24 @@
-
-user_input = "helo"
-
-
-def is_recursion(user_input):
-    recurser_array = []
-    for letters in user_input:
-        recurser_array.append(letters)
-    print(recurser_array)
+print("Please input something")
+user_input = input()
+print(user_input[1:-1])
+arr = []
+for letter in user_input:
+    arr.append(letter)
 
 
-is_recursion(user_input)
+def is_palindrome(arr):
+    if len(arr) > 1:
+        return True
+    else:
+        if arr[0] == arr[-1]:
+            return is_palindrome(arr[1:-1])
+        else:
+            return False
+
+
+print(f'The array is "{arr}" ')
+
+if(is_palindrome(arr) == True):
+    print("The string is a palindrome")
+else:
+    print("The string isn't a palindrome")
