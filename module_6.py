@@ -19,6 +19,6 @@ def is_palindrome(arr):
 print(f'The array is "{arr}" ')
 
 if(is_palindrome(arr) == True):
-    print("The string is a palindrome")
+    print(f'{user_input} is a palindrome')
 else:
-    print("The string isn't a palindrome")
+    print(f'{user_input} is not a palindrome')
